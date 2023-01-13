@@ -22,6 +22,10 @@ Here is presented one of the case studies used to validate the methodology.
 ## Licence
 The code is released under WTFPL License (see [LICENSE](https://github.com/GeoTechUVigo/truss_bridge_pointcloud_segmentation/blob/main/LICENSE) file for details).
 
+## Data
+The data is available in the [GeoTech Group repository](https://universidadevigo-my.sharepoint.com/:f:/g/personal/geotech_uvigo_gal/EoT3-ehKcexOs0yT2zS_LpABNX2Y-rswZvqBOB5cAgtt0Q), in the folder:
+/DataSets/trus_bridge_pc
+
 ## Usage
 
 
