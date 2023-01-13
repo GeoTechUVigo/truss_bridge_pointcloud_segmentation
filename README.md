@@ -7,7 +7,7 @@ This repository contains the code of the work entitled [INSERTAR ENLACE ARTIGO].
 Consists of a methodology for automatically segment point cloud truss bridges. The segmentation includes not only semantic but also instance information. The aim of the method is not segmenting all the points of the point cloud, but to ensure that each bar is segmented as an independent instance, avoiding that several bars are segmented as a single instance.
 The method is a heuristic method which follows the following diagram.
 
-![alt_text](https://github.com/GeoTechUVigo/SAFEWAY_truss_bridges_segmentation/blob/main//Images/lateral_face.png)
+![alt_text](https://github.com/GeoTechUVigo/truss_bridge_pointcloud_segmentation/tree/main/Images/main_diagram_2.png)
 
 
 ![Model](https://github.com/GeoTechUVigo/truss_bridge_pointcloud_segmentation/tree/main/Images/main_diagram_2.png)
