@@ -203,7 +203,7 @@ facesLocationZ = sort(facesLocationZ,'ascend');
 for i = 1:numVerticalFaces
     idxSec = find(vx.Location(:,2) > (facesLocationY(i) - 0.5*width_faces_v_h_i(1)) & vx.Location(:,2) < (facesLocationY(i) + 0.5*width_faces_v_h_i(1)) ...
                 & vx.Location(:,3) > min(facesLocationZ - 0.5*width_faces_v_h_i(2)) & vx.Location(:,3) < max(facesLocationZ + 0.5*width_faces_v_h_i(1)) ...
-                & vx.Location(:,1) > x_limits(1)                                  & vx.Location(:,1) < x_limits(2)); % Portotide
+                & vx.Location(:,1) > x_limits(1)                                  & vx.Location(:,1) < x_limits(2));
     vxSec = select(vx, idxSec);
    
 %     figure;pcshow(vxSec.Location)
@@ -294,8 +294,7 @@ for i = 1:numHorizontalFaces
     
     idxSec = find(vx.Location(:,3) > (facesLocationZ(i) - 0.5*width_faces_v_h_i(2)) & vx.Location(:,3) < (facesLocationZ(i) + 0.5*width_faces_v_h_i(2)) ...
                 & vx.Location(:,2) > min(facesLocationY - 0.5*width_faces_v_h_i(1)) & vx.Location(:,2) < max(facesLocationY + 0.5*width_faces_v_h_i(1)) ...
-                & vx.Location(:,1) > - 43                                  & vx.Location(:,1) < 21.5); % Dom Luis. Manual segmentation because the cloud is not correctly split
-%     & vx.Location(:,1) > -16                                   & vx.Location(:,1) < 14.5); % Portotide
+                & vx.Location(:,1) > x_limits(1)                                    & vx.Location(:,1) < x_limits(2));
             
     vxSec = select(vx, idxSec);
     
@@ -641,7 +640,7 @@ for i = 1:numel(components.verticalFaces)
 
         element = vxOrigin.parent_idx((cat(1,components.verticalFaces{i}.chords{:})));
         element = cat(1,element{:});
-        hold on; pcshow(vxOrigin.parent_cloud(element,:), [0.5,0.5,0.5], 'MarkerSize', markerSize);
+        hold on; pcshow(vxOrigin.parent_cloud(element,:), [0.7,0.7,0], 'MarkerSize', markerSize);
     end
 end
 for i = 1:numel(components.horizontalFaces)
@@ -668,6 +667,7 @@ for i = 1:numel(components.innerFaces)
         element = vxOrigin.parent_idx((cat(1,components.innerFaces{i}.lateralDiagonals{2}{:})));
         element = cat(1,element{:});
         hold on; pcshow(vxOrigin.parent_cloud(element,:), 'r', 'MarkerSize', markerSize);
+    end
     try
         element = vxOrigin.parent_idx((cat(1,components.innerFaces{i}.vertical{:})));
         element = cat(1,element{:});
@@ -677,7 +677,6 @@ for i = 1:numel(components.innerFaces)
         element = vxOrigin.parent_idx((cat(1,components.innerFaces{i}.horizontal{:})));
         element = cat(1,element{:});
         hold on; pcshow(vxOrigin.parent_cloud(element,:), [0.7,0.5,0], 'MarkerSize', markerSize);
-    end
     end
 end
 WhitePcshow();
