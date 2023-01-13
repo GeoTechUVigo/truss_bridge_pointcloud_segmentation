@@ -18,7 +18,7 @@ Here is presented one of the case studies used to validate the methodology.
 
 
 ## Citation
-![licence](https://github.com/GeoTechUVigo/truss_bridge_pointcloud_segmentation/blob/main/LICENCE)
+![license](https://github.com/GeoTechUVigo/truss_bridge_pointcloud_segmentation/blob/main/LICENSE)
 
 ## Licence
 
