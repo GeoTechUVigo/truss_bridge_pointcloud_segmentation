@@ -13,7 +13,7 @@ In order to use the same functions, each face is reoriented as a vertical face. 
 ![analysing_faces](https://github.com/GeoTechUVigo/truss_bridge_pointcloud_segmentation/blob/main/Images/analysing_faces.png)
 
 Here is presented one of the case studies used to validate the methodology.
-![bridge_segmentation](https://github.com/GeoTechUVigo/truss_bridge_pointcloud_segmentation/blob/main/Images/bridge_segmentation.gift)
+![bridge_segmentation](https://github.com/GeoTechUVigo/truss_bridge_pointcloud_segmentation/blob/main/Images/bridge_segmentation.gif)
 
 
 ## Citation
