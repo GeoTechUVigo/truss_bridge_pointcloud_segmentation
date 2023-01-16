@@ -22,7 +22,8 @@ Here is presented one of the case studies used to validate the methodology.
 ## Citation
 
 ## Licence
-The code is released under this [LICENSE](https://github.com/GeoTechUVigo/truss_bridge_pointcloud_segmentation/blob/main/LICENSE).
+
+The code is released under the terms of the ![LICENSE](https://github.com/GeoTechUVigo/truss_bridge_pointcloud_segmentation/blob/main/LINCENSE.md) file and under the terms of the GNU General Public License in the ![COPYING](https://github.com/GeoTechUVigo/truss_bridge_pointcloud_segmentation/blob/main/COPYING.md) file.
 
 ## Data
 The data is available in the [GeoTech Group repository](https://universidadevigo-my.sharepoint.com/:f:/g/personal/geotech_uvigo_gal/EoT3-ehKcexOs0yT2zS_LpABNX2Y-rswZvqBOB5cAgtt0Q), in the folder:
