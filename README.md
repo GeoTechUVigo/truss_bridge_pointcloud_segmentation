@@ -5,6 +5,9 @@ Created by [Daniel Lamas Novoa](https://orcid.org/0000-0001-7275-183X), [Andrés
 ## Overview
 This repository contains the code of the work entitled [INSERTAR ENLACE ARTIGO].
 Consists of a methodology for automatically segment point cloud truss bridges among 2 pillars and without them. The segmentation includes not only semantic but also instance information. The aim of the method is not segmenting all the points of the point cloud, but to ensure that each bar is segmented as an independent instance, avoiding that several bars are segmented as a single instance.
+
+The input required is a truss bridge point cloud LAS file. The output is the same file, with the semantic segmentation written in the ```Classification``` field and the instance segmentation in the ```PointSoourceId``` field.
+
 The method is a heuristic method which follows the following diagram.
 
 ![main_diagram_2](https://github.com/GeoTechUVigo/truss_bridge_pointcloud_segmentation/blob/main/Images/main_diagram_2.png)
@@ -61,7 +64,7 @@ Run the code.
 Run the TrussSegmentation function adjusting the input parameters to your case study. The inputs of the function are:
 
 - path_in: path the LAS input file.
-- path_out: path the LAS output file.
+- path_out: path the LAS output file. Semantic segmentation written in the ```Classification``` field and the instance segmentation in the ```PointSoourceId``` field.
 - width_faces_v_h_i: 1x3 with the width of vertical, horizontal and inner faces.
 - lateralBarWidth: diagonal and lateral brace width.
 - verticalBarWidth: vertical bar width.
