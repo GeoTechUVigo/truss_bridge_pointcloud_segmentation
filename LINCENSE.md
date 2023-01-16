@@ -1,6 +1,8 @@
-<one line to give the program's name and a brief idea of what it does.>
-Copyright (C) <2023>  <GeoTECH Group> <geotech@uvigo.gal>
-              <2023>  <Daniel Lamas Novoa> <daniel.lamas.novoa@uvigo.gal>
+Automated instance and semantic segmentation of point clouds of large metallic truss bridges with modelling purposes.
+
+Copyright (C) 2023  GeoTECH Group <geotech@uvigo.gal>
+
+Copyright (C) 2023  Daniel Lamas Novoa <daniel.lamas.novoa@uvigo.gal>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
