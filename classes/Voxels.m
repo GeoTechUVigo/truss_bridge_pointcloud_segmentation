@@ -1,3 +1,8 @@
+% Copyright (C) 2023 GeoTECH Group geotech@uvigo.gal
+% Copyright (C) 2023 Daniel Lamas Novoa daniel.lamas.novoa@uvigo.gal
+% Under the terms of the GNU General Public License.
+% See the LICENCE.md and COPYING.md file for more details.
+
 classdef Voxels
     %Añadir las propiedades que se especifican en el ejercicio. No es
     %necesario definir el tipo de dato de la propiedad - puede hacerse si

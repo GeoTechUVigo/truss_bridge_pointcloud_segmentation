@@ -1,3 +1,9 @@
+% Copyright (C) 2023 GeoTECH Group geotech@uvigo.gal
+% Copyright (C) 2023 Daniel Lamas Novoa daniel.lamas.novoa@uvigo.gal
+% Copyright (C) 2023 Andrés Justo Domínguez andres.justo.dominguez@uvigo.gal
+% Under the terms of the GNU General Public License.
+% See the LICENCE.md and COPYING.md file for more details.
+
 function [vertical] = VerticalMembers(vx,notAnalysed, vxLocalPca, histWidth, verticalBarWidth)
 %% Vertical Members:
 % Select voxels with vertical dispersions that were discarded

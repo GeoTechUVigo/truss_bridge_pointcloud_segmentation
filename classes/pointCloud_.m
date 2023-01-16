@@ -1,5 +1,8 @@
-classdef pointCloud_ < matlab.mixin.Copyable & vision.internal.EnforceScalarHandle
+% Copyright (C) 2023 GeoTECH Group geotech@uvigo.gal
+% Under the terms of the GNU General Public License.
+% See the LICENCE.md and COPYING.md file for more details.
 
+classdef pointCloud_ < matlab.mixin.Copyable & vision.internal.EnforceScalarHandle
 %Clase modificada a partir de la clase pointCloud_ de matlab. Se añaden las
 %propiedades Intensity, timeStamp, angle, y sensor al objeto para representar mejor
 %la nube de puntos. 
