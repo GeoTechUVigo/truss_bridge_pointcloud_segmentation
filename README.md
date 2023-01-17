@@ -10,7 +10,7 @@ The input required is a truss bridge point cloud LAS file. The output is the sam
 
 The method is a heuristic method which follows the following diagram.
 
-![main_diagram_2](https://github.com/GeoTechUVigo/truss_bridge_pointcloud_segmentation/blob/main/Images/main_diagram_2.png)
+![main_diagram_2](https://github.com/GeoTechUVigo/truss_bridge_pointcloud_segmentation/blob/main/Images/main_diagram.png)
 
 In order to use the same functions, each face is reoriented as a vertical face. The steps applied to each face are shown in the following diagram.
 ![analysing_faces](https://github.com/GeoTechUVigo/truss_bridge_pointcloud_segmentation/blob/main/Images/analysing_faces.png)
