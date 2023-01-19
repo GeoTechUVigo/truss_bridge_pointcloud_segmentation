@@ -94,7 +94,7 @@ parser.addRequired('chordWidthZ', @(x)validateattributes(x,{'numeric'}, {'real',
 parser.addOptional('grid', 0.05, @(x)validateattributes(x,{'numeric'}, {'real','nonnan'}));
 parser.addOptional('inside_board', false, @(x)validateattributes(x,{'logical'}, {}));
 parser.addOptional('maxDistCentralFace', 0.5, @(x)validateattributes(x,{'numeric'}, {'real','nonnan'}));
-parser.addOptional('numHorizontalFaces', 2, @(x)validateattributes(x,{'numeric'}, {'real','nonnan'}));
+parser.addOptional('numHorizontalFaces', 1, @(x)validateattributes(x,{'numeric'}, {'real','nonnan'}));
 parser.addOptional('numVerticalFaces', 2, @(x)validateattributes(x,{'numeric'}, {'real','nonnan'}));
 parser.addOptional('x_limits', [-inf, inf],@(x)validateattributes(x,{'numeric'}, {}));
 parser.addOptional('alignmentFile', [],@(x)validateattributes(x,{'string', 'char'}, {}));
@@ -210,7 +210,7 @@ else
     first=1;
 end
 
-facesLocationZ = edgesZ(first:first+numHorizontalFaces-1);
+facesLocationZ = edgesZ(first:first+1);
 deck_z= edgesZ(1);
 
 %% Sorting the faces
@@ -304,10 +304,6 @@ for i = 1:numVerticalFaces
 end
 
 %% Horizontal sections
-if ~inside_board
-    % The top face is the board
-    numHorizontalFaces = numHorizontalFaces - 1;
-end
 for i = 1:numHorizontalFaces
     
     idxSec = find(vx.Location(:,3) > (facesLocationZ(i) - 0.5*width_faces_v_h_i(2)) & vx.Location(:,3) < (facesLocationZ(i) + 0.5*width_faces_v_h_i(2)) ...
@@ -545,8 +541,6 @@ else
 end
 
 %% Split faces and write indexes in vxOrigin
-% TODO: seguir aqui. Separar los miembros en cada cara y ver como segmento
-% la horizontal del medio.
 components.innerFaces = [];
 for i = 1:numel(facesLocationX)
 
