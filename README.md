@@ -1,9 +1,10 @@
-# Automated instance and semantic segmentation of point clouds of large metallic truss bridges with modelling purposes
+# [Instance and semantic segmentation of point clouds of large metallic truss bridges](https://doi.org/10.1016/j.autcon.2023.104865)
 
 Created by [Daniel Lamas Novoa](https://orcid.org/0000-0001-7275-183X), [Andrés Justo Dominguez](https://orcid.org/0000-0003-2072-4076), [Mario Soilán Rodríguez](https://orcid.org/0000-0001-6545-2225), [Manuel Cabaleiro Núñez](https://orcid.org/0000-0002-6948-1389) and [Belén Riveiro Rodríguez](https://orcid.org/0000-0002-1497-4370) from [GeoTech Group](https://geotech.webs.uvigo.es/en/), [CINTECX](http://cintecx.uvigo.es/gl/), [UVigo](https://www.uvigo.gal/).
 
 ## Overview
-This repository contains the code of the work entitled [INSERTAR ENLACE ARTIGO].
+This repository contains the code of the paper entitled [Instance and semantic segmentation of point clouds of large metallic truss bridges](https://doi.org/10.1016/j.autcon.2023.104865)
+
 Consists of a methodology for automatically segment point cloud truss bridges among 2 pillars and without them. The segmentation includes not only semantic but also instance information. The aim of the method is not segmenting all the points of the point cloud, but to ensure that each bar is segmented as an independent instance, avoiding that several bars are segmented as a single instance.
 
 The input required is a truss bridge point cloud LAS file. The output is the same file, with the semantic segmentation written in the ```Classification``` field and the instance segmentation in the ```PointSoourceId``` field.
@@ -20,9 +21,26 @@ Here is presented one of the case studies used to validate the methodology.
 
 
 ## Citation
+If you find our work useful in your research, please consider citing:
+```
+@article{LAMAS2023104865,
+title = {Instance and semantic segmentation of point clouds of large metallic truss bridges},
+journal = {Automation in Construction},
+volume = {151},
+pages = {104865},
+year = {2023},
+issn = {0926-5805},
+doi = {https://doi.org/10.1016/j.autcon.2023.104865},
+url = {https://www.sciencedirect.com/science/article/pii/S0926580523001255},
+author = {Daniel Lamas and Andrés Justo and Mario Soilán and Manuel Cabaleiro and Belén Riveiro},
+keywords = {Point clouds, Truss bridge, Panoptic segmentation, Semantic segmentation, Instance segmentation, LiDAR, TLS},
+abstract = {Several methods have been developed for the semantic segmentation of reinforced concrete bridges, however, there is a gap for truss bridges. Therefore, in this study a state-of-the-art methodology for the instance and semantic segmentation of point clouds of truss bridges for modelling purposes is presented, which, to the best of the authors' knowledge, is the first such methodology. This algorithm segments each truss element and classifies them as a chord, diagonal, vertical post, interior lateral brace, bottom lateral brace, or strut. The algorithm consists of a sequence of methods, including principal component analysis or clustering, that analyse each point and its neighbours in the point cloud. Case studies show that by adjusting only six manually measured parameters, the algorithm can automatically segment a truss bridge point cloud.}
+}
+```
+
 
 ## Licence
-Automated instance and semantic segmentation of point clouds of large metallic truss bridges with modelling purposes.
+Automated instance and semantic segmentation of point clouds of large metallic truss bridges.
 
 Copyright (C) 2023 GeoTECH Group <geotech@uvigo.gal>
 
